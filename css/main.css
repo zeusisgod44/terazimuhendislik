@@ -40,7 +40,7 @@ h2 {
     border-radius: 2px;
 }
 
-/* bberaat */
+/*bberaat */
 html, body {
     overflow-x: hidden !important;
     width: 100%;
@@ -55,8 +55,6 @@ img {
     height: auto;
     display: block;
 }
-
-
 /* Navbar genel ayarları */
 .navbar {
     display: flex;
@@ -1363,671 +1361,62 @@ img {
     margin: 4px 0;
     transition: 0.4s;
 }
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #403f3d;
-        flex-direction: column;
-        align-items: flex-start;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease;
-    }
-
-    .nav-links.active {
-        max-height: 600px;
-    }
-
-    .nav-links a, 
-    .dropdown-toggle {
-        padding: 12px 20px;
-        color: white;
-        text-decoration: none;
-        width: 100%;
-        display: block;
-    }
-
-    .nav-links a:hover,
-    .dropdown-toggle:hover {
-        background: rgba(255,255,255,0.1);
-    }
-
-    /* Dropdown menü (Hizmetler altı) */
-    .dropdown-menu {
-        background: #504f4d;
-        width: 100%;
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.4s ease;
-    }
-
-    /* Açılınca animasyonla büyüsün */
-    .dropdown.active .dropdown-menu {
-        max-height: 300px;
-    }
-
-    .dropdown-menu a {
-        padding: 10px 35px;
-        font-size: 14px;
-        color: #fff;
-        display: block;
-        text-decoration: none;
-    }
-
-    .dropdown-menu a:hover {
-        background: rgba(255,255,255,0.1);
-    }
-}
-/* ================= TABLET: 768px - 1023px ================= */
-@media (min-width: 768px) and (max-width: 1023px) {
-    /* Navbar */
-    .navbar {
-        padding: 12px 30px;
-        height: 70px;
-    }
-
-    /* Logo */
-    .logo img {
-        height: 50px;
-    }
-
-    /* Hamburger */
-    .hamburger {
-        display: flex;
-    }
-
-    /* Nav Links */
-    .nav-links {
-        position: fixed;
-        top: 70px; /* navbar height */
-        left: 0;
-        width: 100%;
-        background-color: #403f3d;
-        flex-direction: column;
-        align-items: flex-start;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease;
-    }
-
-    .nav-links.active {
-        max-height: 500px; /* açıldığında büyüklük */
-    }
-
-    .nav-links a,
-    .dropdown-toggle {
-        padding: 12px 25px;
-        font-size: 0.95rem;
-        width: 100%;
-    }
-
-    .nav-links a:hover,
-    .dropdown-toggle:hover {
-        background: rgba(255, 255, 255, 0.1);
-    }
-
-    /* Dropdown */
-    .dropdown-menu {
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease;
-    }
-
-    .dropdown.active .dropdown-menu {
-        max-height: 250px;
-    }
-
-    .dropdown-menu a {
-        padding: 10px 30px;
-        font-size: 0.9rem;
-    }
-
-    /* Hero Section */
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-content p {
-        font-size: 1.1rem;
-    }
-
-    .hero-btn {
-        padding: 10px 30px;
-        font-size: 0.95rem;
-    }
-
-    /* About / Service Sections */
-    .about-container,
-    .service-container,
-    .service2-container,
-    .quake-container {
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-    }
-
-    .about-text,
-    .service-text,
-    .service2-text,
-    .quake-text {
-        flex: 1 1 100%;
-        text-align: center;
-    }
-
-    .about-image,
-    .service-image,
-    .service2-image,
-    .quake-image {
-        flex: 1 1 90%;
-        text-align: center;
-    }
-
-    .about-btn,
-    .service-btn,
-    .service2-btn,
-    .quake-btn {
-        margin: 20px auto 0 auto;
-    }
-
-    /* Footer */
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .footer-brand,
-    .footer-services,
-    .footer-pages,
-    .footer-socials {
-        flex: 1 1 100%;
-        text-align: center;
-    }
-}
-
-/* ================= TELEFON: 480px - 767px ================= */
-@media (min-width: 480px) and (max-width: 767px) {
-    /* Navbar */
-    .navbar {
-        padding: 10px 20px;
-        height: 60px;
-    }
-
-    .logo img {
-        height: 45px;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        top: 60px; /* navbar height */
-        max-height: 0;
-    }
-
-    .nav-links.active {
-        max-height: 450px;
-    }
-
-    .nav-links a,
-    .dropdown-toggle {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    /* Dropdown */
-    .dropdown-menu {
-        max-height: 0;
-    }
-
-    .dropdown.active .dropdown-menu {
-        max-height: 220px;
-    }
-
-    .dropdown-menu a {
-        padding: 8px 25px;
-        font-size: 0.85rem;
-    }
-
-    /* Hero Section */
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .hero-btn {
-        padding: 8px 25px;
-        font-size: 0.9rem;
-    }
-
-    /* About / Service Sections */
-    .about-container,
-    .service-container,
-    .service2-container,
-    .quake-container {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
-
-    .about-text,
-    .service-text,
-    .service2-text,
-    .quake-text {
-        flex: 1 1 100%;
-        text-align: center;
-    }
-
-    .about-image,
-    .service-image,
-    .service2-image,
-    .quake-image {
-        flex: 1 1 95%;
-        text-align: center;
-    }
-
-    .about-btn,
-    .service-btn,
-    .service2-btn,
-    .quake-btn {
-        margin: 15px auto 0 auto;
-    }
-
-    /* Footer */
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .footer-brand,
-    .footer-services,
-    .footer-pages,
-    .footer-socials {
-        flex: 1 1 100%;
-        text-align: center;
-    }
-}
-
-/* ================= KÜÇÜK TELEFON: <480px ================= */
-@media (max-width: 479px) {
-    /* Navbar */
-    .navbar {
-        padding: 8px 15px;
-        height: 55px;
-    }
-
-    .logo img {
-        height: 40px;
-    }
-
-    .hamburger {
-        display: flex;
-        width: 25px;
-        height: 22px;
-    }
-
-    .nav-links {
-        top: 55px; /* navbar height */
-        max-height: 0;
-    }
-
-    .nav-links.active {
-        max-height: 400px;
-    }
-
-    .nav-links a,
-    .dropdown-toggle {
-        padding: 8px 15px;
-        font-size: 0.8rem;
-    }
-
-    /* Dropdown */
-    .dropdown-menu {
-        max-height: 0;
-    }
-
-    .dropdown.active .dropdown-menu {
-        max-height: 200px;
-    }
-
-    .dropdown-menu a {
-        padding: 6px 20px;
-        font-size: 0.75rem;
-    }
-
-    /* Hero Section */
-    .hero-content h1 {
-        font-size: 1.7rem;
-    }
-
-    .hero-content p {
-        font-size: 0.9rem;
-    }
-
-    .hero-btn {
-        padding: 6px 20px;
-        font-size: 0.85rem;
-    }
-
-    /* About / Service Sections */
-    .about-container,
-    .service-container,
-    .service2-container,
-    .quake-container {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .about-text,
-    .service-text,
-    .service2-text,
-    .quake-text {
-        flex: 1 1 100%;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .about-image,
-    .service-image,
-    .service2-image,
-    .quake-image {
-        flex: 1 1 95%;
-        text-align: center;
-    }
-
-    .about-btn,
-    .service-btn,
-    .service2-btn,
-    .quake-btn {
-        margin: 10px auto 0 auto;
-        padding: 8px 20px;
-    }
-
-    /* Footer */
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .footer-brand,
-    .footer-services,
-    .footer-pages,
-    .footer-socials {
-        flex: 1 1 100%;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .footer-logo {
-        width: 120px;
-    }
-}
-
-/* ================= iPHONE ÖZEL ================= */
-@media (min-width: 320px) and (max-width: 414px) {
-    /* Navbar */
-    .navbar {
-        padding: 8px 12px;
-        height: 55px;
-    }
-
-    .logo img {
-        height: 40px;
-    }
-
-    .hamburger {
-        display: flex;
-        width: 25px;
-        height: 22px;
-    }
-
-    .nav-links {
-        top: 55px; /* navbar height */
-        max-height: 0;
-    }
-
-    .nav-links.active {
-        max-height: 400px;
-    }
-
-    .nav-links a,
-    .dropdown-toggle {
-        padding: 8px 12px;
-        font-size: 0.8rem;
-    }
-
-    .dropdown-menu {
-        max-height: 0;
-    }
-
-    .dropdown.active .dropdown-menu {
-        max-height: 200px;
-    }
-
-    .dropdown-menu a {
-        padding: 6px 20px;
-        font-size: 0.75rem;
-    }
-
-    /* Hero */
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero-content p {
-        font-size: 0.95rem;
-    }
-
-    .hero-btn {
-        padding: 6px 20px;
-        font-size: 0.85rem;
-    }
-
-    /* Hakkımızda / Servisler / Quake */
-    .about-container,
-    .service-container,
-    .service2-container,
-    .quake-container {
-        flex-direction: column;
-        gap: 18px;
-        align-items: center;
-    }
-
-    .about-text,
-    .service-text,
-    .service2-text,
-    .quake-text {
-        flex: 1 1 100%;
-        text-align: center;
-        padding: 0 8px;
-    }
-
-    .about-image,
-    .service-image,
-    .service2-image,
-    .quake-image {
-        flex: 1 1 95%;
-        text-align: center;
-    }
-
-    .about-btn,
-    .service-btn,
-    .service2-btn,
-    .quake-btn {
-        margin: 10px auto 0 auto;
-        padding: 8px 18px;
-        font-size: 0.85rem;
-    }
-
-    /* Footer */
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .footer-brand,
-    .footer-services,
-    .footer-pages,
-    .footer-socials {
-        flex: 1 1 100%;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .footer-logo {
-        width: 120px;
-    }
-}
-
-/* ================= REDMI 14C / Orta Geniş Telefon ================= */
-@media (min-width: 360px) and (max-width: 411px) {
-    /* Navbar */
-    .navbar {
-        padding: 10px 15px;
-        height: 60px;
-    }
-
-    .logo img {
-        height: 45px;
-    }
-
-    .hamburger {
-        display: flex;
-        width: 28px;
-        height: 22px;
-    }
-
-    .nav-links {
-        top: 60px; /* navbar height */
-        max-height: 0;
-    }
-
-    .nav-links.active {
-        max-height: 450px;
-    }
-
-    .nav-links a,
-    .dropdown-toggle {
-        padding: 10px 15px;
-        font-size: 0.85rem;
-    }
-
-    .dropdown-menu {
-        max-height: 0;
-    }
-
-    .dropdown.active .dropdown-menu {
-        max-height: 220px;
-    }
-
-    .dropdown-menu a {
-        padding: 8px 22px;
-        font-size: 0.8rem;
-    }
-
-    /* Hero */
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .hero-btn {
-        padding: 8px 24px;
-        font-size: 0.9rem;
-    }
-
-    /* Hakkımızda / Servisler / Quake */
-    .about-container,
-    .service-container,
-    .service2-container,
-    .quake-container {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .about-text,
-    .service-text,
-    .service2-text,
-    .quake-text {
-        flex: 1 1 100%;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .about-image,
-    .service-image,
-    .service2-image,
-    .quake-image {
-        flex: 1 1 95%;
-        text-align: center;
-    }
-
-    .about-btn,
-    .service-btn,
-    .service2-btn,
-    .quake-btn {
-        margin: 12px auto 0 auto;
-        padding: 8px 22px;
-        font-size: 0.9rem;
-    }
-
-    /* Footer */
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .footer-brand,
-    .footer-services,
-    .footer-pages,
-    .footer-socials {
-        flex: 1 1 100%;
-        text-align: center;
-        padding: 0 12px;
-    }
-
-    .footer-logo {
-        width: 130px;
-    }
-}
-.about-text,
-.service-text,
-.service2-text,
-.quake-text {
-    text-align: left !important;
-    align-items: flex-start !important;
-    justify-content: flex-start;
-}
-
-.about-container,
-.service-container,
-.service2-container,
-.quake-container {
+/* ✅ Tüm mobil cihazlar için düzenli hizmet bölümü görünümü */
+@media (max-width: 1024px) {
+  /* Her iki container tipi için geçerli */
+  .service-container,
+  .service2-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; /* Ortaya hizala */
+    justify-content: center;
+    gap: 15px; /* Metinler çok açılmasın */
+    padding: 20px 10px;
+    text-align: center; /* Başlık ve metin ortalansın */
+  }
+
+  /* Başlık ve paragraf hizalaması */
+  .service-text h2,
+  .service2-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .service-text p,
+  .service2-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  /* Resim boyutları */
+  .service-image img,
+  .service2-image img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Butonlar hizalı ve daha yakın */
+  .service-btn,
+  .service2-btn {
+    margin-top: 10px;
+    align-self: center;
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  /* Gereksiz boşlukları azalt */
+  .service-text,
+  .service2-text {
+    margin: 0;
+    padding: 0;
+  }
 }
