@@ -1361,61 +1361,62 @@ img {
     margin: 4px 0;
     transition: 0.4s;
 }
-@media (max-width: 768px) {
-  /* Genel sayfa hizalaması */
-  body {
-    overflow-x: hidden;
+/* ✅ Tüm mobil cihazlar için düzenli hizmet bölümü görünümü */
+@media (max-width: 1024px) {
+  /* Her iki container tipi için geçerli */
+  .service-container,
+  .service2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ortaya hizala */
+    justify-content: center;
+    gap: 15px; /* Metinler çok açılmasın */
+    padding: 20px 10px;
+    text-align: center; /* Başlık ve metin ortalansın */
   }
 
-  /* Hakkımızda bölümü düzenleme */
-  .about-section, 
-  .hakkimizda, 
-  .section-hakkimizda {
-    max-width: 90%;
-    margin: 0 auto;           /* ✅ ortalar */
-    padding: 0 15px;          /* 📱 kenarlardan nefes alanı */
-    text-align: center;       /* ✅ metni ortalar */
-  }
-
-  .about-section h2, 
-  .hakkimizda h2, 
-  .section-hakkimizda h2 {
-    text-align: center;       /* başlık ortalı */
-    font-size: 1.8rem;
-  }
-
-  .about-section p, 
-  .hakkimizda p, 
-  .section-hakkimizda p {
-    text-align: center;       /* metin ortalı */
-    line-height: 1.7;
-    font-size: 1rem;
-  }
-
-  /* Butonlar ortada */
-  .btn, 
-  .contact-btn, 
-  .cta-button {
-    display: block;
-    margin: 20px auto;
+  /* Başlık ve paragraf hizalaması */
+  .service-text h2,
+  .service2-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
     text-align: center;
   }
 
-  /* Görsel kartların ortalanması */
-  .image-box, 
-  .about-img, 
-  .info-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .service-text p,
+  .service2-text p {
+    font-size: 1rem;
+    line-height: 1.5;
     margin: 0 auto;
     max-width: 90%;
+    text-align: center;
   }
 
-  /* Navbar için taşmayı önle */
-  .navbar {
-    width: 100%;
-    padding: 0 20px;
-    overflow-x: hidden;
+  /* Resim boyutları */
+  .service-image img,
+  .service2-image img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Butonlar hizalı ve daha yakın */
+  .service-btn,
+  .service2-btn {
+    margin-top: 10px;
+    align-self: center;
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  /* Gereksiz boşlukları azalt */
+  .service-text,
+  .service2-text {
+    margin: 0;
+    padding: 0;
   }
 }
