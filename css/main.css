@@ -2010,3 +2010,12 @@ img {
         width: 130px;
     }
 }
+.service-image img,
+.service2-image img,
+.about-image img,
+.quake-image img {
+    width: 100%;       /* Bulunduğu container'ın genişliğini alır */
+    height: auto;      /* Oranları bozulmaz */
+    display: block;    /* Gereksiz boşlukları kaldırır */
+    object-fit: contain; /* Taşma olmadan sığdırır */
+}
