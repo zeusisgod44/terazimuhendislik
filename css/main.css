@@ -1324,3 +1324,26 @@ h2 {
     margin: 4px 0;
     transition: 0.4s;
 }
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: rgba(42,41,39,0.95);
+        flex-direction: column;
+        width: 200px;
+        text-align: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
