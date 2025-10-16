@@ -1419,26 +1419,3 @@ img {
     overflow-x: hidden;
   }
 }
-h2 {
-    text-align: center;
-}
-
-.service-text, .about-text, .service2-text, .quake-text {
-    max-width: 600px;       /* Metnin çok geniş olmasını engeller */
-    margin: 0 auto;          /* Ortalar */
-    text-align: center;      /* Başlık ve paragrafları ortalar */
-}
-
-.service-image img,
-.service2-image img,
-.about-image img,
-.quake-image img {
-    width: 100%;       /* Bulunduğu container'ın genişliğini alır */
-    height: auto;      /* Oranları bozulmaz */
-    display: block;    /* Gereksiz boşlukları kaldırır */
-    object-fit: contain; /* Taşma olmadan sığdırır */
-}
-.service-image, .service2-image, .about-image, .quake-image {
-    max-width: 100%;  /* Container ekranı aşamaz */
-    flex-shrink: 0;   /* Gereksiz küçülmeyi engeller */
-}
