@@ -39,14 +39,18 @@ h2 {
     background-color: #000;
     border-radius: 2px;
 }
+html, body {
+    overflow-x: hidden;
+    width:100%;
 
+}
 /* Navbar genel ayarları */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw; /* Ekran genişliği kadar */
+    width: 100%; /* Ekran genişliği kadar */
     max-width: 100%; /* Taşmayı engeller */
     height: 80px;
     display: flex;
