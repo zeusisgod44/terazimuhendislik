@@ -2012,3 +2012,22 @@ img {
         width: 130px;
     }
 }
+.about-text,
+.service-text,
+.service2-text,
+.quake-text {
+    text-align: left !important;
+    align-items: flex-start !important;
+    justify-content: flex-start;
+}
+
+.about-container,
+.service-container,
+.service2-container,
+.quake-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
